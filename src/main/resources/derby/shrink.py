@@ -10,10 +10,7 @@ from org.springframework.security.core.context import SecurityContextHolder
 
 def is_current_user_admin():
     authentication = SecurityContextHolder.getContext().getAuthentication()
-    for authority in authentication.getAuthorities():
-        if authority.getAuthority() == "ROLE_ADMIN":
-            return True
-    return False
+    return authentication.getPrincipal() == "admin"
 
 
 def db_url(db_path):
@@ -36,7 +33,7 @@ def jackrabbit_tables(prefix):
 
 if not is_current_user_admin():
     response.statusCode = 403
-    response.entity = 'Only users with admin role can run this action'
+    response.entity = "Only the 'admin' user can run this action"
 
 else:
     default_db_path = request.query.get('defaultDb', 'repository/workspaces/default/db')

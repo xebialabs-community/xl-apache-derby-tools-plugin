@@ -35,6 +35,6 @@ The parameters are:
 
 Compressing works quite fast. For example, it takes less than 10 seconds to compress database after removing 2000 releases from XL Release.
 
-Note that only _admin_ users are allowed to make this call.
+Note that only the **admin** user is allowed to make this call.
 
 Note also that this action has nothing to do with Lucene indexes. Lucene indexes are compressing automatically to some extent, but if you want them to become really small, the only way is to rebuild them from scratch.
