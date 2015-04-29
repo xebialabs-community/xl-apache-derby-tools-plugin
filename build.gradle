@@ -5,7 +5,7 @@ plugins {
 apply plugin: 'java'
 
 group 'com.xebialabs.xlplatform.plugin'
-version '1.0'
+version '1.1-SNAPSHOT'
 
 processResources.configure {
   filter ReplaceTokens, tokens: [
