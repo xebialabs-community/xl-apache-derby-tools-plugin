@@ -1,0 +1,20 @@
+import org.apache.tools.ant.filters.ReplaceTokens
+plugins {
+  id "com.github.hierynomus.license" version "0.11.0"
+}
+apply plugin: 'java'
+
+group 'com.xebialabs.xlplatform.plugin'
+version '1.0-SNAPSHOT'
+
+processResources.configure {
+  filter ReplaceTokens, tokens: [
+      'project.version': version.toString(),
+      'project.name': rootProject.name
+  ]
+}
+
+license {
+  header rootProject.file('src/main/license/xebialabs_community.license')
+  strictCheck true
+}
