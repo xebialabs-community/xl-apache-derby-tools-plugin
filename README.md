@@ -11,7 +11,7 @@ Requirements:
 
 To install the plugin you have to:
 
-1. Download the [`xl-apache-derby-tools-plugin-1.0.jar`](https://github.com/xebialabs-community/xl-apache-derby-tools-plugin/releases/download/v1.0/xl-apache-derby-tools-plugin-1.0.jar) into `XLR_or_XLD_HOME/plugins/`.
+1. Download the [`xl-apache-derby-tools-plugin-1.1.jar`](https://github.com/xebialabs-community/xl-apache-derby-tools-plugin/releases/download/v1.1/xl-apache-derby-tools-plugin-1.1.jar) into `XLR_or_XLD_HOME/plugins/`.
 2. Start the server.
 
 ## Usage
