@@ -26,7 +26,7 @@ To force compressing of database files there is a special system call, which is 
 
 This works if you have default configuration of repository (`jackrabbit-repository.xml` file). If you have a custom configuration, for example [the one which stores everything in one database](https://github.com/xebialabs-community/xl-apache-derby-hot-backup/blob/master/src/main/resources/sample/jackrabbit-repository.xml), then you have to provide additional query parameters:
 
-    curl --user admin -X POST http://localhost:5516/my-xl/api/extension/shrink-db\?defaultDb\=repository/db\&versionDb\=repository/db
+    curl --user admin -X POST http://localhost:5516/my-xl/api/extension/shrink-db?defaultDb=repository/workspaces/default/db&versionDb=repository/version/db
 
 The parameters are:
 
